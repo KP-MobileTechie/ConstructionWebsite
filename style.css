@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;  /* Ensures it takes up the full width of the screen */
+    height: 60vh;  /* Makes sure the section's height is responsive */
+    overflow: hidden;  /* Hides the overflow */
+}
+
+.hero img {
+    width: 100%;  /* Makes the image fill the width */
+    height: 100%;  /* Makes the image fill the height */
+    object-fit: cover;  /* Ensures the image is fully covered without stretching */
+    object-position: center;  /* Centers the image */
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;  /* Adjust the height for tablets and small devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh;  /* Further adjust height for smaller mobile screens */
+    }
+}
+
+
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+#services .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+}
+
+#services .card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #2c3e50;
+}
+
+#contact h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact .form-label {
+    color: white;
+}
+
+#contact input,
+#contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contact button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #1abc9c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #services h2,
+    #about h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
+
+#contact p a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+.social-share {
+    margin-top: 20px;
+}
+
+.social-share a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.social-share .btn-primary {
+    background-color: #4267B2; /* Facebook blue */
+}
+
+.social-share .btn-info {
+    background-color: #1DA1F2; /* Twitter blue */
+}
+
+.social-share .btn-success {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+#qr-code {
+    margin-top: 20px;
+}
+
+.services img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image fills the size without distortion */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better aesthetics */
+    margin: 0 auto; /* Centers the image within its container */
+    display: block; /* Ensures it's treated as a block element */
+}
